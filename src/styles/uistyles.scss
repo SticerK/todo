@@ -1,0 +1,140 @@
+.form-input {
+  width: 40%;
+  height: 30px;
+  padding: 0;
+  border: 0;
+  background-color: rgb(239, 239, 239);
+  outline: 0;
+  font-size: 16px;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  font-size: 16px;
+  color: rgb(136, 136, 136);
+}
+
+.input-line {
+  width: 0px;
+  height: 2px;
+  background-color: rgb(245, 75, 75);
+  transition: width 0.2s ease;
+}
+
+.form-input:focus + .input-line {
+  width: 40%;
+}
+
+.form-textarea {
+  width: 80%;
+  border: 0;
+  background-color: rgb(239, 239, 239);
+  outline: 0;
+  font-size: 16px;
+  height: 20vh;
+  resize: none;
+  border: 2px solid transparent;
+  transition: border 0.3s ease;
+}
+
+.form-textarea:focus {
+  border: 2px solid rgb(245, 75, 75);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  border: 2px solid rgb(245, 75, 75);
+  font-size: 14px;
+  transition: color 0.3s ease;
+  transition: background 0.3s ease;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: rgb(245, 75, 75);
+
+  color: #fff;
+}
+
+.checkbox-container {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+  border: 2px solid rgb(245, 75, 75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkbox-innerContainer {
+  width: 16px;
+  height: 16px;
+  background-color: rgb(245, 75, 75);
+  border-radius: 3px;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.active-checkbox {
+  opacity: 1;
+}
+
+.MyInput {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.MySelect {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+  width: 126px;
+  height: 40px;
+  font-size: 16px;
+  border: 2px solid rgb(245, 75, 75);
+  background-color: rgb(239, 239, 239);
+  outline: 0;
+  padding: 0 10px;
+  position: relative;
+  cursor: pointer;
+  gap: 7px;
+}
+
+.MySelect p {
+  overflow: hidden;
+}
+
+.MySelect svg {
+  transition: color 0.3s ease;
+}
+
+.MySelect:hover svg {
+  color: rgb(245, 75, 75);
+}
+
+.MySelect-option-container {
+  top: 100%;
+  position: absolute;
+  left: -2px;
+  border: 2px solid rgb(245, 75, 75);
+  z-index: 100;
+  width: 146px;
+  background-color: rgb(239, 239, 239);
+}
+
+.MySelect-option {
+  margin-left: -2px;
+  border-top: 1px solid silver;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  padding: 0 5px;
+}

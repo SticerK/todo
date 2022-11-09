@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import 'reset.scss';
+@import 'header.scss';
+@import 'task.scss';
+@import 'mainField.scss';
+@import 'navbar.scss';
+@import 'uistyles.scss';
+@import 'form.scss';
+
+body {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}

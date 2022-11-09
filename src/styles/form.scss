@@ -1,0 +1,50 @@
+.form {
+  width: 80%;
+  margin: 50px auto;
+  border: 1px solid rgb(239, 239, 239);
+
+  padding: 40px;
+}
+
+.form-error-title {
+  color: rgb(245, 75, 75);
+  font-size: 16px;
+  margin-left: -5px;
+  margin-top: 5px;
+  line-height: 1.5;
+}
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.toggle-form-container {
+  display: block;
+  width: 300px;
+  margin: 0 auto 30px;
+  justify-content: center;
+  position: relative;
+}
+
+.toggle-form {
+  background-color: rgb(239, 239, 239);
+  padding: 15px 10px;
+  width: 130px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.active-toggle-form {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: calc(100% - 4px);
+  width: 146px;
+  border: 2px solid rgb(245, 75, 75);
+  cursor: pointer;
+  transition: transform 0.15s ease;
+}
